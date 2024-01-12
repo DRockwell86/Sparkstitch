@@ -1,15 +1,14 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Pam Corbett Fitness",
+    "email": "pamcorbettfitness@gmail.com",
+    "phoneForTel": "315-456-8504",
+    "phoneFormatted": "(315) 456-8504",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "lineOne": "103 Third Street",
+        "city": "Solvay",
+        "state": "NY",
+        "zip": "13209",
+        "mapLink": "https://maps.app.goo.gl/5RgPBmmqBWJTcEow6"
     },
-    "domain": "https://www.codestitch.app"
+    "domain": "https://www.pamcorbettfitness.com"
 }

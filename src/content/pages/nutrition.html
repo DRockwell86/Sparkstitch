@@ -1,0 +1,59 @@
+---
+title: 'Nutrition Consultation'
+description: 'Nutrition Consulting | Pam Corbett | Personal Trainer Syracuse, NY'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'nutrition/'
+eleventyNavigation:
+    key: Projects
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/nutrition.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-558">
+    <div class="cs-container">
+        <span class="cs-int-topper">Pam Corbett Fitness</span>
+        <span class="cs-int-title">Nutrition Consultation</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/nutrition" class="cs-link cs-active">Nutrition</a>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbs-r-870">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/nutritionpic1.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/nutritionpic1.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/nutritionpic1.webp" alt="therapy" width="630" height="775">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Eat Better, Feel Better</span>
+            <br>
+            <h2 class="cs-title">Nutrition Consultation</h2>
+            <p class="cs-text">
+                My Nutrition Consulting provides professional advice by educating our clients on their individual nutritional needs. Fueling our bodies with the proper variety and portion of foods at consistent times of the day leads to a healthier life.
+            </p>
+            <br>
+            <a href="/contact" class="cs-button-solid">Learn More</a>
+        </div>
+    </div>
+</section>                           
+{% endblock %}

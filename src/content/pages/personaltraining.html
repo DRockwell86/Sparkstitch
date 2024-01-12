@@ -1,0 +1,66 @@
+---
+title: 'Personal Training'
+description: 'Personal Training | Pam Corbett | Personal Trainer Syracuse, NY'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'personaltraining/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/personaltraining.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-558">
+    <div class="cs-container">
+        <span class="cs-int-topper">Pam Corbett Fitness</span>
+        <span class="cs-int-title">Personal Training</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/personaltraining" class="cs-link cs-active">Personal Training</a>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/ptpic2.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/ptpic2.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/ptpic2.webp" alt="therapy" width="630" height="775">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">A Personalized Approach To Your Well-Being</span>
+            <br>
+            <h2 class="cs-title">Strength Training & Weight Loss</h2>
+            <p class="cs-text">
+                I offer 30 minute training sessions designed specifically for <strong>You.</strong> Sessions are in a private, clean and secure gym setting.
+            </p>
+            <br>
+            <p class="cs-text">
+                It is a challenge for anyone to implement a practical, effective and Sustainable Weight-Loss Plan. It takes will-power and committment. I will create a plan for you that will help you lose weight, improve your stamina and help you live longer.
+            </p>
+            <br>
+            <a href="/contact" class="cs-button-solid">Learn More</a>
+        </div>
+    </div>
+</section>
+                                
+                                
+                                
+                                
+{% endblock %}
