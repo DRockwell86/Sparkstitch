@@ -510,30 +510,6 @@ html {
     display: none;
   }
 }
-/* Dark Mode */
-@media only screen and (max-width: 63.9375rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-ul-wrapper:before {
-    /* dark overlay */
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: 0.2;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-}
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
@@ -664,21 +640,6 @@ html {
   }
   #cs-navigation .cs-nav-button {
     margin: 0 0 0 auto;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    background-color: var(--medium);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
   }
 }
 /*-- -------------------------- -->
@@ -1086,40 +1047,5 @@ html {
     position: relative;
     top: auto;
     right: auto;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cs-footer-841 {
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #cs-footer-841 .cs-logo-img {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-footer-841 .cs-text,
-  body.dark-mode #cs-footer-841 .cs-header,
-  body.dark-mode #cs-footer-841 .cs-link,
-  body.dark-mode #cs-footer-841 .cs-credit-link,
-  body.dark-mode #cs-footer-841 .cs-bottom-link,
-  body.dark-mode #cs-footer-841 .cs-credit {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-footer-841 .cs-credit-link:hover,
-  body.dark-mode #cs-footer-841 .cs-bottom-link:hover,
-  body.dark-mode #cs-footer-841 .cs-link:hover {
-    color: var(--primary);
-  }
-  body.dark-mode #cs-footer-841 .cs-text,
-  body.dark-mode #cs-footer-841 .cs-link,
-  body.dark-mode #cs-footer-841 .cs-credit,
-  body.dark-mode #cs-footer-841 .cs-credit-link,
-  body.dark-mode #cs-footer-841 .cs-bottom-link {
-    opacity: 0.8;
-  }
-  body.dark-mode #cs-footer-841 .cs-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-footer-841 .cs-bottom {
-    border-color: rgba(255, 255, 255, 0.1);
   }
 }
