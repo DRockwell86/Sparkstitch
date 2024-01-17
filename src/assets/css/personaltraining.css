@@ -116,4 +116,19 @@
     position: relative;
   }
 }
-
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-867 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #sbs-867 .cs-title,
+  body.dark-mode #sbs-867 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-867 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-867 .cs-picture:before {
+    background-color: var(--accent);
+  }
+}
