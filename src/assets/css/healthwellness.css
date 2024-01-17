@@ -1,12 +1,16 @@
 /*-- -------------------------- -->
-<---    Side By Side Reverse    -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-r-870 {
+  #RPsbs-872,
+  #RPsbsr-872 {
     padding: var(--sectionPadding);
+    /* clips overlapping cs-image-group */
+    overflow: hidden;
   }
-  #sbs-r-870 .cs-container {
+  #RPsbs-872 .cs-container,
+  #RPsbsr-872 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -15,31 +19,35 @@
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
   }
-  #sbs-r-870 .cs-content {
+  #RPsbs-872 .cs-content,
+  #RPsbsr-872 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 33.875rem;
-    /* prevents padding from affecting width and height */
-    box-sizing: border-box;
+    max-width: 32.625rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-r-870 .cs-title {
-    /* 17 characters wide including spaces */
-    max-width: 17ch;
+  #RPsbs-872 .cs-title,
+  #RPsbsr-872 .cs-title {
+    /* 20 characters wide including spaces */
+    max-width: 20ch;
   }
-  #sbs-r-870 .cs-text {
+  #RPsbs-872 .cs-text,
+  #RPsbsr-872 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbs-r-870 .cs-text:last-of-type {
+  #RPsbs-872 .cs-text:last-of-type,
+  #RPsbsr-872 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-r-870 .cs-button-solid {
+  #RPsbs-872 .cs-button-solid,
+  #RPsbsr-872 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -58,7 +66,8 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #sbs-r-870 .cs-button-solid:before {
+  #RPsbs-872 .cs-button-solid:before,
+  #RPsbsr-872 .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -71,50 +80,160 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbs-r-870 .cs-button-solid:hover:before {
+  #RPsbs-872 .cs-button-solid:hover:before,
+  #RPsbsr-872 .cs-button-solid:hover:before {
     width: 100%;
   }
-  #sbs-r-870 .cs-picture {
-    display: block;
+  #RPsbs-872 .cs-ul,
+  #RPsbsr-872 .cs-ul {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    columns: 2;
+  }
+  #RPsbs-872 .cs-li,
+  #RPsbsr-872 .cs-li {
+    list-style: none;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
     position: relative;
-    width: 100%;
-    max-width: 39.375rem;
-    /* 400px - 775px */
-    height: clamp(25rem, 70vw, 48.4375rem);
-    box-shadow: 0px 2.80579px 42.0868px rgba(0, 0, 0, 0.16);
-    /* 100px - 200px */
-    border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
-    /* clips img tag corners */
-    overflow: hidden;
   }
-  #sbs-r-870 .cs-picture img {
+  #RPsbs-872 .cs-li:before,
+  #RPsbsr-872 .cs-li:before {
+    /* accent shape */
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background: #bababa;
+    border-radius: 0.25rem 0 0.25rem 0;
+    display: block;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #RPsbs-872 .cs-image-group,
+  #RPsbsr-872 .cs-image-group {
+    /* using ems so we can scale the whole section using a font size min/max. Font size (.61em) max changes at desktop */
+    font-size: min(1.61vw, .61em);
+    width: 56.125em;
+    height: 50.875em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  #RPsbs-872 .cs-image-group:before,
+  #RPsbsr-872 .cs-image-group:before {
+    /* accent shape */
+    content: "";
+    width: 18.6875em;
+    height: 14.625em;
+    background: #ffb478;
+    border-radius: 6.25em 0 6.25em 0;
+    opacity: 1;
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    display: block;
+    bottom: 0;
+    left: 8.75em;
+  }
+  #RPsbs-872 .cs-left-img,
+  #RPsbsr-872 .cs-left-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 0 12.5em 0 12.5em;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+  }
+  #RPsbs-872 .cs-left-img img,
+  #RPsbsr-872 .cs-left-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #RPsbs-872 .cs-right-img,
+  #RPsbsr-872 .cs-right-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 12.5em 0 12.5em 0;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+    transform: translateY(6.25em);
+  }
+  #RPsbs-872 .cs-right-img img,
+  #RPsbsr-872 .cs-right-img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
-/* Desktop - 1024px */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbs-r-870 {
-    padding: var(--sectionPadding);
-  }
-  #sbs-r-870 .cs-container {
-    flex-direction: row;
+  #RPsbs-872 .cs-container,
+  #RPsbsr-872 .cs-container {
     max-width: 80rem;
+    flex-direction: row;
     justify-content: space-between;
   }
-  #sbs-r-870 .cs-content {
-    width: 53%;
-    /* reset the padding, add the section padding back to the section container */
-    padding: 0;
-    /* sends it to the left in the 1st position */
-    order: -1;
+  #RPsbs-872 .cs-image-group,
+  #RPsbsr-872 .cs-image-group {
+    font-size: min(.8vw, 1em);
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
-  #sbs-r-870 .cs-picture {
-    width: 47vw;
-    position: relative;
+}
+/* Large Desktop 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #RPsbs-872 .cs-image-group,
+  #RPsbsr-872 .cs-image-group {
+    font-size: inherit;
+    /* The cs-image-group is actually REALLY big. It's so big, the design has it overlapping the normal 1280px container by 220px.  This is just a design choice that "breaks" the container and creates a more dynamic design and website. */
+    transform: translateX(-12.75rem);
+  }
+  #RPsbs-872 .cs-content,
+  #RPsbsr-872 .cs-content {
+    /* we absolutely position the cs-content so the cs-image-group can remain position relative and dictate the height of the section. Since the cs-content is smaller in height, if it remained relative then the height of the container would only be as tall as the .cs-content and the absolutely positioned cs-image-group would overlap into the top and bottom neighboring sections. */
+    flex: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-872 {
+    background-color: #fef7f4;
+  }
+  #RPsbsr-872 .cs-image-group:before {
+    border-radius: 0 6.25em 0 6.25em;
+    left: 28.6875em;
+  }
+  #RPsbsr-872 .cs-left-img {
+    border-radius: 12.5em 0 12.5em 0;
+  }
+  #RPsbsr-872 .cs-right-img {
+    border-radius: 0 12.5em 0 12.5em;
+    transform: translateY(6.25em);
+  }
+}
+/* Large Desktop 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #RPsbsr-872 .cs-container {
+    justify-content: flex-end;
+  }
+  #RPsbsr-872 .cs-image-group {
+    transform: translateX(13.75rem);
+  }
+  #RPsbsr-872 .cs-content {
+    /* reset the right value so it doesn't affect the left value */
+    right: auto;
+    left: 0;
   }
 }
